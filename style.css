@@ -117,7 +117,8 @@ section {
 
 .typewriter h1 {
     overflow: hidden;
-    border-right: .5em solid white;
+    border-right: .15em solid white;
+    max-height: 60px;
     white-space: nowrap;
     margin: 0 auto;
     animation: 
@@ -127,7 +128,7 @@ section {
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 35% }
   }
   
 @keyframes blink-caret {
