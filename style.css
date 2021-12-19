@@ -57,7 +57,8 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #00ccff
+    color: #00ccff;
+    font-size: 40px
 }
 
 button {
