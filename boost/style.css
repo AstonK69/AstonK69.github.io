@@ -1,0 +1,153 @@
+:root {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+body {
+    color: white;
+    background-color: #001220;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #5c5c5c;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #e5ff00;
+}
+
+li, a, button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+header>*{
+    align-items: center;
+    display: flex;
+    width: 33%;
+}
+
+header nav{
+    justify-content: center;
+}
+
+header .cta{
+    justify-content: right;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #00ccff;
+    font-size: 35px
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+sectionfirst {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    padding: 100px 20vw;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+    padding: 100px 20vw;
+}
+
+.blue {
+    background: #00ccff;
+}
+
+.orange {
+    background: #ff7300;
+}
+
+.dark {
+    background: #001220;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url('/images/layer1blue.svg');
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 35% }
+  }
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
