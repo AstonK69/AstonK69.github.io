@@ -2,7 +2,7 @@ window.onload = function() {
 
     const textElement = document.getElementById("typing");
     const text = "Welcome to Newcastle Racing!";
-    const typingSpeed = 100; // milliseconds
+    const typingSpeed = 65; // milliseconds
     let index = 0;
 
     function typeText() {
