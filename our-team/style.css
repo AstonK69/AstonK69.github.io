@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
@@ -6,22 +10,62 @@
 
 body {
     color: white;
-    background-color: #001220;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
+    background-color: #0a0a0a;
 }
 
 body::-webkit-scrollbar {
-    width: 5px;
+    width: 15px;
 }
 
 body::-webkit-scrollbar-track {
-    background: #5c5c5c;
+    background: #1f1f1f;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #e5ff00;
+    background: #006cb5;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 30px;
+    justify-items: center;
+    margin: 0 auto;
+}
+  
+.card {
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    text-align: center;
+    width: 500px;              /* Set a fixed width for each card */
+    padding: 20px;              /* Padding inside each card */
+    border-radius: 10px;        /* Rounded corners */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #006cb5;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        padding: 10px; /* Reduce padding on small screens */
+        gap: 15px;     /* Reduce gap between cards on small screens */
+    }
 }
 
 li, a, button {
@@ -33,24 +77,24 @@ li, a, button {
 }
 
 header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 5px 2%;
 }
 
-header>*{
+header > * {
     align-items: center;
     display: flex;
     width: 33%;
 }
 
-header nav{
+header nav {
     justify-content: center;
 }
 
-header .cta{
+header .cta {
     justify-content: right;
 }
 
@@ -73,13 +117,13 @@ header .cta{
 }
 
 .nav__links li a:hover {
-    color: #00ccff;
-    font-size: 35px
+    color: #006cb5;
+    font-size: 35px;
 }
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: #000000;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -87,7 +131,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: #161616;
 }
 
 sectionfirst {
@@ -96,7 +140,8 @@ sectionfirst {
     flex-direction: column;
     align-items: center;
     min-height: 250px;
-    padding: 100px 20vw;
+    padding: 150px 10vw;
+    line-height: 20px;
 }
 
 section {
@@ -108,20 +153,8 @@ section {
     padding: 100px 20vw;
 }
 
-.blue {
-    background: #00ccff;
-}
-
-.orange {
-    background: #ff7300;
-}
-
-.dark {
-    background: #001220;
-}
-
 .spacer {
-    aspect-ratio: 960/300;
+    aspect-ratio: 960/200;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -129,25 +162,5 @@ section {
 }
 
 .layer1 {
-    background-image: url('/images/layer1blue.svg');
+    background-image: url('/images/blackwaves.svg');
 }
-
-.typewriter h1 {
-    overflow: hidden;
-    border-right: .15em solid white;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 35% }
-  }
-  
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white }
-  }
