@@ -1,6 +1,6 @@
 :root {
     font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 
@@ -29,14 +29,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-li, a, button {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-}
-
 header {
     display:flex;
     flex-direction: row;
@@ -45,32 +37,46 @@ header {
     padding: 5px 2%;
 }
 
-header>*{
+header > *{
     align-items: center;
     display: flex;
-    width: 33%;
+    /* width: 33%; */
+}
+
+.logo {
+    flex: 0 0 auto;
+    max-width: 100%;
+    justify-content: center;
 }
 
 header nav{
+    flex: 1;
     justify-content: center;
 }
 
 header .cta{
-    justify-content: right;
+    flex: 0 0 auto;
+    justify-content: flex-end;
 }
 
-.logo {
-    cursor: pointer;
+li, a, button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
 }
 
 .nav__links {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .nav__links li a {
@@ -79,15 +85,14 @@ header .cta{
 
 .nav__links li a:hover {
     color: #006cb5;
-    font-size: 35px
+    font-size: 1.75vw;
 }
 
 button {
-    padding: 9px 25px;
+    padding: 0.5vw 1vw;
     background-color: #000000;
     border: none;
-    border-radius: 50px;
-    cursor: pointer;
+    border-radius: 2vw;
     transition: all 0.3s ease 0s;
 }
 
@@ -100,9 +105,86 @@ sectionfirst {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 250px;
-    padding: 150px 10vw;
-    line-height: 20px;
+    padding: 10vw;
+    line-height: 1.5vw;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20vw;
+    padding: 10vw;
+}
+
+@media (max-width: 1200px) {
+    button {
+        padding: 1.5vw 2vw;
+        border-radius: 6vw;
+    }
+
+    sectionfirst {
+        font-size: 3vw;
+    }
+
+    section {
+        font-size: 4vw;
+    }
+
+    li, a, button {
+        font-size: 4vw;
+    }
+
+    header .logo {
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1599px) {
+    button {
+        padding: 0.8vw 1.6vw;
+        border-radius: 6vw;
+    }
+
+    sectionfirst {
+        font-size: 2.5vw;
+    }
+
+    section {
+        font-size: 3vw;
+    }
+
+    li, a, button {
+        font-size: 3vw;
+    }
+
+    header .logo {
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1920px) {
+    button {
+        padding: 0.8vw 1.6vw;
+        border-radius: 6vw;
+    }
+
+    sectionfirst {
+        font-size: 2.5vw;
+    }
+
+    section {
+        font-size: 3vw;
+    }
+
+    li, a, button {
+        font-size: 2vw;
+    }
+
+    header .logo {
+        max-width: 30%;
+    }
 }
 
 #typing::after {
@@ -130,15 +212,6 @@ sectionfirst {
     }
 }
 
-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 600px;
-    padding: 100px 20vw;
-}
-
 .blue {
     background: #00ccff;
 }
@@ -149,6 +222,7 @@ section {
 
 .dark {
     background: #0a0a0a;
+
 }
 
 .spacer {
