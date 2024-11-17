@@ -37,14 +37,17 @@ body::-webkit-scrollbar-thumb {
     justify-items: center;
     margin: 0 auto;
 }
-  
+
 .card {
     background-color: rgb(77, 77, 77);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     text-align: center;
-    width: 500px;              /* Set a fixed width for each card */
-    padding: 20px;              /* Padding inside each card */
-    border-radius: 10px;        /* Rounded corners */
+    width: 500px;
+    /* Set a fixed width for each card */
+    padding: 20px;
+    /* Padding inside each card */
+    border-radius: 10px;
+    /* Rounded corners */
 }
 
 .card:hover {
@@ -63,12 +66,16 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 600px) {
     .cards {
-        padding: 10px; /* Reduce padding on small screens */
-        gap: 15px;     /* Reduce gap between cards on small screens */
+        padding: 10px;
+        /* Reduce padding on small screens */
+        gap: 15px;
+        /* Reduce gap between cards on small screens */
     }
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
     font-weight: 500;
@@ -84,7 +91,7 @@ header {
     padding: 5px 2%;
 }
 
-header > * {
+header>* {
     align-items: center;
     display: flex;
     width: 33%;

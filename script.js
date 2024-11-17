@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
 
     const textElement = document.getElementById("typing");
     const text = "Welcome to Newcastle Racing!";
