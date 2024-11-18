@@ -6,7 +6,7 @@
 
 body {
     color: white;
-    background-color: #111111;
+    background-color: #1d1d1d;
     margin: 0;
     padding: 0;
     max-width: 100%;
@@ -56,10 +56,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1vw;
 }
 
-/* .card h2 {
-    font-size: 1rem;
-} */
-
 @media (max-width: 600px) {
     .cards {
         padding: 10px;
@@ -75,6 +71,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 5px 2%;
+    padding-top: 1%;
 }
 
 header>* {
@@ -84,8 +81,16 @@ header>* {
 
 .logo {
     flex: 0 0 auto;
-    max-width: 100%;
+    /* max-width: 100%; */
     justify-content: center;
+    width: 6vw;
+    border-radius: 4vw;
+    height: auto;
+    transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+    box-shadow: 0 0 0.75vw 0 #757575;
 }
 
 header nav {
@@ -106,6 +111,7 @@ button {
     font-weight: 500;
     color: white;
     text-decoration: none;
+    max-width: 100%;
 }
 
 .nav__links {
@@ -126,7 +132,7 @@ button {
 
 .nav__links li a:hover {
     color: #006cb5;
-    font-size: 1.75vw;
+    font-size: 2.1vw;
 }
 
 button {
@@ -180,8 +186,9 @@ section {
         font-size: 4vw;
     }
 
-    header .logo {
-        max-width: 20%;
+    .logo {
+        width: 12vw;
+        height: auto;
     }
 }
 
@@ -203,10 +210,6 @@ section {
     a,
     button {
         font-size: 3vw;
-    }
-
-    header .logo {
-        max-width: 30%;
     }
 }
 
@@ -230,9 +233,9 @@ section {
         font-size: 2vw;
     }
 
-    header .logo {
-        max-width: 30%;
-    }
+    /* header .logo {
+        max-width: 100%;
+    } */
 }
 
 #typing::after {
