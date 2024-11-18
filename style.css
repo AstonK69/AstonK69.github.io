@@ -23,7 +23,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #006cb5;
+    background: #043c64;
     border-radius: 1vw;
 }
 
@@ -40,29 +40,22 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(77, 77, 77);
     text-align: center;
     width: 20vw;
-    padding: 1vw;
+    padding: 0.5vw;
     border-radius: 1vw;
     transition: all 0.3s ease 0s;
     font-size: 1rem;
+    line-height: 1vw;
+    letter-spacing: 1px;
 }
 
 .card:hover {
-    box-shadow: 0 0 1vw 0 #006cb5;
+    box-shadow: 0 0 1vw 0 #043c64;
 }
 
 .card img {
     width: 100%;
     height: auto;
-    border-radius: 1vw;
-}
-
-@media (max-width: 600px) {
-    .cards {
-        padding: 10px;
-        /* Reduce padding on small screens */
-        gap: 15px;
-        /* Reduce gap between cards on small screens */
-    }
+    border-radius: 0.7vw;
 }
 
 header {
@@ -81,12 +74,13 @@ header>* {
 
 .logo {
     flex: 0 0 auto;
-    /* max-width: 100%; */
+    max-width: 100px;
     justify-content: center;
     width: 6vw;
-    border-radius: 4vw;
+    border-radius: 5vw;
     height: auto;
     transition: all 0.3s ease 0s;
+    background-color: #1d1d1d;
 }
 
 .logo:hover {
@@ -131,8 +125,9 @@ button {
 }
 
 .nav__links li a:hover {
-    color: #006cb5;
-    font-size: 2.1vw;
+    color: #043c64;
+    font-size: 1.6vw;
+    text-shadow: 0 0 0.5vw #043c64;
 }
 
 button {
@@ -155,6 +150,7 @@ sectionfirst {
     align-items: center;
     padding: 10vw;
     line-height: 1.5vw;
+    letter-spacing: 2px;
 }
 
 section {
@@ -166,11 +162,32 @@ section {
     padding: 10vw;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+    .logo {
+        width: 10vw;
+        height: auto;
+    }
+
     button {
         padding: 1.5vw 2vw;
         border-radius: 6vw;
+        font-size: 4vw;
     }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    button {
+        padding: 1vw 1.4vw;
+        border-radius: 6vw;
+        font-size: 3vw;
+    }
+
+    .logo {
+        width: 8vw;
+    }
+}
+
+@media (max-width: 1200px) {
 
     sectionfirst {
         font-size: 3vw;
@@ -181,14 +198,8 @@ section {
     }
 
     li,
-    a,
-    button {
+    a {
         font-size: 4vw;
-    }
-
-    .logo {
-        width: 12vw;
-        height: auto;
     }
 }
 
@@ -232,10 +243,6 @@ section {
     button {
         font-size: 2vw;
     }
-
-    /* header .logo {
-        max-width: 100%;
-    } */
 }
 
 #typing::after {
