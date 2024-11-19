@@ -18,6 +18,8 @@
 
 </head>
 
+<script src="../contact/script.js"></script>
+
 <body>
     <header>
         <a href="/"><img class="logo" src="../images/newcastleracingdotlarge.png" alt="logo"></a>
@@ -33,41 +35,44 @@
         <a class="cta" href="https://linktr.ee/newcastle.racing" target="_blank"
             rel="noopener noreferrer"><button>Linktree</button></a>
     </header>
-    <sectionfirst>
-        <h1 style="font-size: 4vw">Meet the team behind Newcastle Racing!</h1>
-    </sectionfirst>
 
-    <div class="cards">
-        <div class="card">
-            <img src="../images/IMG_1112.png" alt="Finlay">
-            <h2>Finlay</h2>
-            <p>Role: Team Lead</p>
-        </div>
-        <div class="card">
-            <img src="../images/IMG_1113.png" alt="Miles">
-            <h2>Miles</h2>
-            <p>Role: Mechanical Lead</p>
-        </div>
-        <div class="card">
-            <img src="../images/IMG_1122.png" alt="Patrick">
-            <h2>Patrick</h2>
-            <p>Role: Suspension Lead</p>
-        </div>
-        <div class="card">
-            <img src="../images/blank.png" alt="Patrick">
-            <h2>Jon Smith</h2>
-            <p>Role: Test Job</p>
-        </div>
-        <div class="card">
-            <img src="../images/blank.png" alt="Patrick">
-            <h2>Jon Smith</h2>
-            <p>Role: Test Job</p>
-        </div>
-        <div class="card">
-            <img src="../images/blank.png" alt="Patrick">
-            <h2>Jon Smith</h2>
-            <p>Role: Test Job</p>
-        </div>
+    <div class="contact-form-container">
+        <h2 style="letter-spacing: 1px;">Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" 
+                       name="name" 
+                       placeholder="Your Name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" 
+                       name="email" 
+                       placeholder="Your Email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" 
+                       name="phone" 
+                       placeholder="Your Phone Number" required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" 
+                          name="message" 
+                          placeholder="Your Message" 
+                          rows="5" required></textarea>
+                <span class="error-message" 
+                      id="messageError"></span>
+            </div>
+            <button id="contact" class="submit-button">
+              Send Message
+            </button>
+        </form>
     </div>
 
     <div class="spacer layer1"></div>

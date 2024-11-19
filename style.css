@@ -390,3 +390,62 @@ footer {
     background-color: black;
     width: 100%;
 }
+
+.contact-form-container {
+    margin: 0 auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    background-color: #161616;
+    padding: 1.5vw;
+    border-radius: 1.5vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 40vw;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #636363;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Arial';
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}

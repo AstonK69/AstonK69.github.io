@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.24.2",
+    "postmark": "^4.0.5"
+  }
+}
