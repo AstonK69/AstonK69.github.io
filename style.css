@@ -92,9 +92,25 @@ header nav {
     justify-content: center;
 }
 
-header .cta {
+.linktree {
     flex: 0 0 auto;
     justify-content: flex-end;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    max-width: 100%;
+    padding: 0.5vw 1vw;
+    background-color: #000000;
+    border: none;
+    border-radius: 2vw;
+    transition: all 0.3s ease 0s;
+}
+
+.linktree:hover {
+    background-color: #161616;
+    box-shadow: 0 0 0.75vw 0 #757575;
 }
 
 li,
@@ -130,19 +146,6 @@ button {
     text-shadow: 0 0 0.5vw #043c64;
 }
 
-button {
-    padding: 0.5vw 1vw;
-    background-color: #000000;
-    border: none;
-    border-radius: 2vw;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: #161616;
-    box-shadow: 0 0 0.75vw 0 #757575;
-}
-
 sectionfirst {
     position: relative;
     display: flex;
@@ -172,7 +175,7 @@ section {
         line-height: 1vw;
     }
 
-    button {
+    .linktree {
         padding: 1.5vw 2vw;
         border-radius: 6vw;
         font-size: 2.5vw;
@@ -180,6 +183,10 @@ section {
     
     .nav__links li a {
         font-size: 2vw;
+    }
+
+    .nav__links li a:hover {
+        font-size: 2.1vw;
     }
 
     sectionfirst {
@@ -197,7 +204,7 @@ section {
         line-height: 2.5vw;
     }
 
-    button {
+    .linktree {
         padding: 1.5vw 2vw;
         border-radius: 6vw;
         font-size: 3vw;
@@ -206,10 +213,14 @@ section {
     .nav__links li a {
         font-size: 3vw;
     }
+
+    .nav__links li a:hover {
+        font-size: 3.1vw;
+    }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
-    button {
+    .linktree {
         padding: 1vw 1.4vw;
         border-radius: 6vw;
         font-size: 3vw;
@@ -222,6 +233,11 @@ section {
     .nav__links li a {
         font-size: 3vw;
     }
+
+    .nav__links li a:hover {
+        font-size: 3.1vw;
+    }
+    
 }
 
 @media (max-width: 1200px) {
@@ -241,7 +257,7 @@ section {
 }
 
 @media (min-width: 1201px) and (max-width: 1599px) {
-    button {
+    .linktree {
         padding: 0.8vw 1.6vw;
         border-radius: 6vw;
     }
@@ -256,13 +272,13 @@ section {
 
     li,
     a,
-    button {
+    .linktree {
         font-size: 3vw;
     }
 }
 
 @media (min-width: 1600px) and (max-width: 1920px) {
-    button {
+    .linktree {
         padding: 0.8vw 1.6vw;
         border-radius: 6vw;
     }
@@ -277,7 +293,7 @@ section {
 
     li,
     a,
-    button {
+    .linktree {
         font-size: 2vw;
     }
 }
@@ -380,7 +396,7 @@ footer {
     padding: 0.75%;
 }
 
-/* footer .cta {
+/* footer .linktree {
     flex: ;
 } */
 
@@ -399,12 +415,16 @@ footer {
     padding: 1.5vw;
     border-radius: 1.5vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 40vw;
+    max-width: 30vw;
     width: 100%;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-title {
+    font-size: 3vw;
 }
 
 label {
@@ -416,11 +436,11 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.4rem;
     border: 1px solid #636363;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-family: 'Arial';
 }
 
@@ -435,7 +455,7 @@ textarea {
 }
 
 .submit-button {
-    background-color: #28a745;
+    background-color: #043c64;
     color: white;
     border: none;
     padding: 0.75rem;
@@ -443,9 +463,26 @@ textarea {
     font-size: 1rem;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease 0s;
 }
 
 .submit-button:hover {
-    background-color: #218838;
+    background-color: #064d80;
+    box-shadow: 0 0 0.75vw #043c64;
+}
+
+@media (max-width: 1000px) {
+    .contact-form-container {
+        max-width: 40vw;
+    }
+
+    .submit-button {
+        height: 5vw;
+    }
+
+    label {
+        font-size: 2vw;
+    }
+
+    
 }
