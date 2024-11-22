@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #1f1f1f;
+    background: #1d1d1d;
     border-radius: 1vw;
 }
 
@@ -391,20 +391,51 @@ section {
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0.75%;
+    background-color: black;
 }
 
 /* footer .linktree {
     flex: ;
 } */
 
-.innerfooter {
+innerfooter {
+    align-items: center;
     box-shadow: 0 0 0.25vw 0.25vw black;
     border-radius: 1vw;
     background-color: black;
     width: 100%;
+    padding: 1vw;
+}
+
+.learnmore {
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    max-width: 100%;
+    padding: 0.5vw 1vw;
+    background-color: #000000;
+    border: 0.1vw solid #ffffff;
+    border-radius: 2vw;
+    transition: all 0.3s ease 0s;
+}
+
+.learnmore:hover {
+    background-color: #161616;
+    box-shadow: 0 0 0.75vw 0 #757575;
+}
+
+.icons {
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    border-radius: 5vw;
+    border: 0.1vw solid #ffffff
 }
 
 .contact-form-container {
