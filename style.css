@@ -408,6 +408,10 @@ innerfooter {
     background-color: black;
     width: 100%;
     padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .learnmore {
@@ -436,9 +440,11 @@ innerfooter {
     justify-content: flex-end;
     border-radius: 5vw;
     border: 0.1vw solid #ffffff;
-    width: 3.8vw;
-    height: auto;
+    width: 3vw;
+}
 
+img.icons {
+    vertical-align: middle;
 }
 
 .contact-form-container {
