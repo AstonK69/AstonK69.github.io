@@ -435,7 +435,10 @@ innerfooter {
     flex: 0 0 auto;
     justify-content: flex-end;
     border-radius: 5vw;
-    border: 0.1vw solid #ffffff
+    border: 0.1vw solid #ffffff;
+    width: 3.8vw;
+    height: auto;
+
 }
 
 .contact-form-container {
