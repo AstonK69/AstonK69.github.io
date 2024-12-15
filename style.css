@@ -92,6 +92,14 @@ header nav {
     justify-content: center;
 }
 
+.link {
+    color: #0080c5;    
+}
+
+.link:hover {
+    color: #00517d;
+}
+
 .linktree {
     flex: 0 0 auto;
     justify-content: flex-end;
@@ -142,7 +150,7 @@ button {
 
 .nav__links li a:hover {
     color: #043c64;
-    font-size: 1.6vw;
+    font-size: 2.3vw;
     text-shadow: 0 0 0.5vw #043c64;
 }
 
@@ -152,8 +160,8 @@ sectionfirst {
     flex-direction: column;
     align-items: center;
     padding: 10vw;
-    line-height: 1.5vw;
-    letter-spacing: 2px;
+    line-height: 2.2vw;
+    letter-spacing: 1px;
 }
 
 section {
@@ -161,8 +169,23 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20vw;
     padding: 10vw;
+}
+
+imgsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2% 20%;
+}
+
+section h1, h4 {
+    margin: 0 auto;
+}
+
+section p {
+    margin: 3vw;
 }
 
 @media (max-width: 499px) {
@@ -247,12 +270,12 @@ section {
     }
 
     section {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     li,
     a {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 
@@ -267,7 +290,7 @@ section {
     }
 
     section {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     li,
@@ -288,7 +311,7 @@ section {
     }
 
     section {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     li,
@@ -318,8 +341,19 @@ section {
 .fade-in-text {
     opacity: 0;
     animation: fadeIn 3s forwards;
-    animation-delay: 2s;
 }
+
+.section-fade {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+    padding: 1vw;
+  }
+  
+  .section-fade.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 
 @keyframes fadeIn {
     0% {
@@ -396,10 +430,6 @@ footer {
     padding: 0.75%;
     background-color: black;
 }
-
-/* footer .linktree {
-    flex: ;
-} */
 
 innerfooter {
     align-items: center;

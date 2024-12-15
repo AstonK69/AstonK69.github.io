@@ -18,7 +18,7 @@
 
 </head>
 
-<script src="../contact/script.js"></script>
+<!-- <script src="../contact/script.js"></script> -->
 
 <body>
     <header>
@@ -36,7 +36,7 @@
             rel="noopener noreferrer"><button class="linktree">Linktree</button></a>
     </header>
 
-    <div class="contact-form-container">
+    <!-- <div class="contact-form-container">
         <h2 class="form-title">Contact Us</h2>
         <form id="contactForm">
             <div class="form-group">
@@ -73,14 +73,51 @@
               Send Message
             </button>
         </form>
-    </div>
+    </div> -->
 
-    <div class="spacer layer1"></div>
+    <h2 class="form-title">Contact Us</h2>
+    <form
+  name="contact"
+  method="POST"
+  data-netlify-recaptcha="true"
+  data-netlify="true"
+  class="contact-form-container"
+>
+  <p class="form-group">
+    <label>
+        Name: <input type="text" name="name" placeholder="Your name" required/>
+    </label>
+  </p>
+  <p class="form-group">
+    <label>
+      Email: <input type="text" name="email" placeholder="example@email.co.uk" required/>
+    </label>
+  </p>
+  <p class="form-group">
+    <label>
+      Message: <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+    </label>
+  </p class="form-group">
+  <div data-netlify-recaptcha="true"></div>
+  <p class="form-group">
+    <button class="submit-button" type="submit">Send</button>
+  </p>
+</form>
 
-    <section>
-        <h1>More Text can be added here!</h1>
-        <p>Newcastle University Formula Student</p>
-    </section>
+<footer>
+    <innerfooter>
+        <p>If you wish to find out more or have any general enquiries about the team, including becoming a sponsor, then please don't hesitate to reach out by submitting a contact form or email us directly at newcastleracinginfo@gmail.com</p>
+        <a href="/contact"><button class="learnmore">Learn More!</button></a>
+    </innerfooter>
+    <innerfooter>
+        <p>To keep up to date with whats going on here at Newcastle Racing, make sure to follow our social media pages where we post frequently about whats going on, whether its about events we hold or the latest trends!</p>
+        <icons>
+            <a href="https://www.instagram.com/newcastleracing/" target="_blank" rel="noopener noreferrer"><img class="icons" src="/images/insta_logo.png" alt="logo"></a>
+            <a href="https://www.linkedin.com/in/newcastle-racing-01b27b171/" target="_blank" rel="noopener noreferrer"><img class="icons" src="/images/linkedin_logo.png" alt="logo"></a>
+        </icons>
+    </innerfooter>
+    
+</footer>
 
 </body>
 
