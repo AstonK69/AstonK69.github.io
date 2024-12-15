@@ -1,7 +1,11 @@
 :root {
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -104,7 +108,7 @@ header nav {
     flex: 0 0 auto;
     justify-content: flex-end;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
     color: white;
     text-decoration: none;
@@ -125,7 +129,7 @@ li,
 a,
 button {
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: 500;
     color: white;
     text-decoration: none;
@@ -188,7 +192,7 @@ section p {
     margin: 3vw;
 }
 
-@media (max-width: 499px) {
+/* @media (max-width: 499px) {
     .logo {
         width: 7vw;
         height: auto;
@@ -319,6 +323,10 @@ section p {
     .linktree {
         font-size: 2vw;
     }
+} */
+
+#typing {
+    font-size: 4vw;
 }
 
 #typing::after {
@@ -341,6 +349,7 @@ section p {
 .fade-in-text {
     opacity: 0;
     animation: fadeIn 3s forwards;
+    animation-delay: 2s;
 }
 
 .section-fade {
@@ -353,6 +362,23 @@ section p {
   .section-fade.visible {
     opacity: 1;
     transform: translate(0, 0);
+  }
+
+  #scrolltopbutton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    background-color: #dd2639;
+    cursor: pointer;
+    padding: 1vw;
+    border-radius: 10vw;
+  }
+  
+  #scrolltopbutton:hover {
+    background-color: #a71c2a;
   }
 
 @keyframes fadeIn {
