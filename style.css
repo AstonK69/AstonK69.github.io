@@ -8,6 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.error404 {
+    margin: auto;
+    padding: 20%;
+    align-items: center;
+}
+
 body {
     color: white;
     background-color: #1d1d1d;
