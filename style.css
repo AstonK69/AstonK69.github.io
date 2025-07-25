@@ -234,13 +234,13 @@ section p {
 }
 
 .stack-item--bottom {
-    grid-column: 8 / 24;
+    grid-column: 12 / 24;
     grid-row: 1;
     z-index: 1;
 }
 
 .stack-item--bottom-contact {
-    grid-column: 8 / 24;
+    grid-column: 12 / 24;
     grid-row: 1;
     padding-top: 30%;
 }
