@@ -69,6 +69,7 @@ body::-webkit-scrollbar-thumb {
 .card h2 {
     margin: 1.5vw;
     letter-spacing: 2px;
+    line-height: 100%
 }
 
 .card p {
